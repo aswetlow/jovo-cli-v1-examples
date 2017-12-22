@@ -28,10 +28,10 @@ Initializes platform specific folders in the project directory.
   Locale of the skill. Creates an empty i18n file and the the language model.
 </p>
 
-### Example
+### Example1
 
 ```sh
 $ jovo new example1
 ```
 Creates simple project without the the platform specific folder structure. (See [example1 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example1))
-[![Jovo Framework](https://www.swetlow.de/example1_folderstructure.jpg)](https://www.jovo.tech)
+[![Jovo Framework](https://www.swetlow.de/example1_folderstructure.jpg)]
