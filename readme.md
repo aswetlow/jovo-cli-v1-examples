@@ -11,8 +11,8 @@ Creates a new empty project based on the 'helloWorld' template in the folder <pr
 <br/>
 <br/>
 
-Command | Description | Docs
------------- | ------------- | -------------
+Command | Description
+------------ | -------------
 `--platform [alexaSkill\|googleAction\|all\|**none**]` | Initializes platform specific folders in the project directory
 
 
