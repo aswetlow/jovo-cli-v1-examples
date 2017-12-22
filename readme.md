@@ -5,15 +5,15 @@
 Installed ASK CLI 
 [QuickStart](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
 
-### jovo new \<project>
 <br/>
+### jovo new \<project>
 Creates a new empty project based on the 'helloWorld' template in the folder <project>.
 <br/>
 <br/>
 
 Command | Description | Docs
 ------------ | ------------- | -------------
-`--bst-proxy` | Creates a webhook URL for local testing | [📝](#bst-proxy)
+`--platform [alexaSkill|googleAction|all|**none**]` | Initializes platform specific folders in the project directory | [📝](#bst-proxy)
 `--watch` | Uses `nodemon` to monitor changes and automatically restart the server | [📝](#watch)
 
 
