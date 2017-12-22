@@ -29,9 +29,10 @@ Initializes platform specific folders in the project directory.
 </p>
 <br/>
 
-Main files:
+##### Main project files:
 <br/>
-app/app.js - Where the logic happens
+
+**app/app.js** - Where the logic happens
 ```javascript
 'use strict';
 
@@ -54,8 +55,10 @@ app.setHandler({
 
 module.exports.app = app;
 ```
+<br/>
+<br/>
 
-index.php - Where the code execution happens
+**index.php** - Where the code execution happens
 ```javascript
 'use strict';
 
@@ -83,6 +86,24 @@ function isWebhook() {
     return process.argv.indexOf('--webhook') > -1 ? 'webhook' : '';
 }
 ```
+<br/>
+<br/>
+
+/app/i18n/{locale}.json - outsourced i18n language file
+```json
+{
+  "translation": {
+    "WELCOME": "Welcome",
+    "WELCOME_WITH_PARAMETER": "Welcome %s %s",
+    "WELCOME_ARRAY": [
+      "Welcome",
+      "Hey",
+      "Hello"
+    ]
+  }
+}
+```
+
 
 
 
