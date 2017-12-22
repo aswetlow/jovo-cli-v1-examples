@@ -29,6 +29,63 @@ Initializes platform specific folders in the project directory.
 </p>
 <br/>
 
+Main files:
+<br/>
+app/app.js - Where the logic happens
+```javascript
+'use strict';
+
+const {App} = require('jovo-framework');
+
+const config = {
+    logging: true,
+};
+
+const app = new App(config);
+
+app.setHandler({
+    'LAUNCH': function() {
+        app.toIntent('HelloWorldIntent');
+    },
+    'HelloWorldIntent': function() {
+        app.tell('hello');
+    },
+});
+
+module.exports.app = app;
+```
+
+index.php - Where the code execution happens
+```javascript
+'use strict';
+
+const {Webhook} = require('jovo-framework');
+const {app} = require('./app/app.js');
+
+
+if (isWebhook()) {
+    const port = process.env.PORT || 3000;
+    Webhook.listen(port, () => {
+        console.log(`Example server listening on port ${port}!`);
+    });
+    Webhook.post('/webhook', (req, res) => {
+        app.handleWebhook(req, res);
+    });
+}
+
+exports.handler = (event, context, callback) => {
+    app.handleLambda(event, context, callback);
+};
+
+
+// will be moved to jovo-framework in final version
+function isWebhook() {
+    return process.argv.indexOf('--webhook') > -1 ? 'webhook' : '';
+}
+```
+
+
+
 ### Example1
 
 ```sh
@@ -158,4 +215,4 @@ Builds platform specific
 	}
 }
 ```
-Generates the Alexa interaction model in file [example2 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example2/platforms)
+Generates the Alexa interaction model in file [/platforms/alexaSkill/models/en-US.json](https://github.com/aswetlow/jovo-cli-v1-examples/blob/master/example2/platforms/alexaSkill/models/en-US.json)

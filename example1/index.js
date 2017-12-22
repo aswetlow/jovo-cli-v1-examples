@@ -1,16 +1,15 @@
 'use strict';
 
-const {WEBHOOK, webhook, getType} = require('../indexV2');
-let type = getType();
-
-const {app} = require('app/app.js');
+const {Webhook} = require('jovo-framework');
+const {app} = require('./app/app.js');
 
 
-if (type === WEBHOOK) {
-    webhook.listen(3000, () => {
-        console.log('Example server listening on port 3000!');
+if (isWebhook()) {
+    const port = process.env.PORT || 3000;
+    Webhook.listen(port, () => {
+        console.log(`Example server listening on port ${port}!`);
     });
-    webhook.post('/webhook', (req, res) => {
+    Webhook.post('/webhook', (req, res) => {
         app.handleWebhook(req, res);
     });
 }
@@ -18,3 +17,9 @@ if (type === WEBHOOK) {
 exports.handler = (event, context, callback) => {
     app.handleLambda(event, context, callback);
 };
+
+
+// will be moved to jovo-framework in final version
+function isWebhook() {
+    return process.argv.indexOf('--webhook') > -1 ? 'webhook' : '';
+}

@@ -1,16 +1,16 @@
 'use strict';
 
-const {JovoClazz} = require('jovo-framework');
+const {App} = require('jovo-framework');
 
 const config = {
     logging: true,
 };
 
-const app = new JovoClazz(config);
+const app = new App(config);
 
 app.setHandler({
     'LAUNCH': function() {
-        app.tell('yo');
+        app.toIntent('HelloWorldIntent');
     },
     'HelloWorldIntent': function() {
         app.tell('hello');
