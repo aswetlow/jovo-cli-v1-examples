@@ -35,3 +35,11 @@ $ jovo new example1
 ```
 Creates simple project without the the platform specific folder structure. (See [example1 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example1))
 [![Jovo Framework](https://www.swetlow.de/example1_folderstructure.jpg)]
+
+### Example2
+
+```sh
+$ jovo new example2 --platform alexaSkill
+```
+Creates simple project with Alexa specific folder structure. (See [example2 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example2))
+[![Jovo Framework](https://www.swetlow.de/example2_folderstructure.jpg)]
