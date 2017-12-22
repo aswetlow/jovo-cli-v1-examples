@@ -8,13 +8,11 @@ Installed ASK CLI
 
 ## jovo new \<project>
 
+Creates a new project based on the 'helloWorld' template.
+
 ```sh
 $ jovo new <project> [--platform <alexaSkill|googleAction|none> [--locale <en-US>]
 ```
-<br/>
-Creates a new empty project based on the 'helloWorld' template in the folder <project>.
-<br/>
-<br/>
 
 
 **Options:**
