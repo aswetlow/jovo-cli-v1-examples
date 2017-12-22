@@ -158,3 +158,4 @@ Builds platform specific
 	}
 }
 ```
+Generates the Alexa interaction model in file [example2 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example2/platforms)

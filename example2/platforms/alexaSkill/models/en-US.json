@@ -1,9 +1,79 @@
 {
 	"interactionModel": {
 		"languageModel": {
-			"invocationName": "hello world",
-			"types": [],
+			"invocationName": "first example",
+			"types": [
+				{
+					"name": "hobby",
+					"values": [
+						{
+							"name": {
+								"value": "fishing"
+							}
+						},
+						{
+							"name": {
+								"value": "skating"
+							}
+						},
+						{
+							"name": {
+								"value": "playing golf"
+							}
+						},
+						{
+							"name": {
+								"value": "coding",
+								"synonyms": [
+									"hacking",
+									"programming"
+								]
+							}
+						}
+					]
+				}
+			],
 			"intents": [
+				{
+					"name": "HelloWorldIntent",
+					"samples": [
+						"Hello world",
+						"Hey World"
+					]
+				},
+				{
+					"name": "OnboardingIntent",
+					"samples": [
+						"My name is {name} and I live in {city}",
+						"My name is {name}",
+						"I live in {city}",
+						"I'm {name} from {city}",
+						"I go by {name}"
+					],
+					"slots": [
+						{
+							"name": "name",
+							"type": "AMAZON.US_FIRST_NAME"
+						},
+						{
+							"name": "city",
+							"type": "AMAZON.US_CITY"
+						}
+					]
+				},
+				{
+					"name": "HobbyIntent",
+					"samples": [
+						"My hobby is {hobby}",
+						"I like {hobby}"
+					],
+					"slots": [
+						{
+							"name": "hobby",
+							"type": "hobby"
+						}
+					]
+				},
 				{
 					"name": "AMAZON.CancelIntent",
 					"samples": []
@@ -15,15 +85,6 @@
 				{
 					"name": "AMAZON.StopIntent",
 					"samples": []
-				},
-				{
-					"name": "HelloWorldIntent",
-					"slots": [],
-					"samples": [
-						"hello",
-						"say hello",
-						"say hello world"
-					]
 				}
 			]
 		}
