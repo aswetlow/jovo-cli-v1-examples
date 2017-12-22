@@ -22,11 +22,9 @@ $ jovo new <project> [--platform <alexaSkill|googleAction|none> [--locale <en-US
 Initializes platform specific folders in the project directory.
 
 **--locale [en-US]** - Default: en-US
-<br/>
-
-Locale of the skill. Creates an empty i18n file and the the language model.
-
-<br/>
+<p>
+  Locale of the skill. Creates an empty i18n file and the the language model.
+</p>
 
 ### Example
 
