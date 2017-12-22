@@ -7,13 +7,14 @@ Installed ASK CLI
 
 <br/>
 ### jovo new \<project>
+
 Creates a new empty project based on the 'helloWorld' template in the folder <project>.
 <br/>
 <br/>
 
 Command | Description
 ------------ | -------------
-`--platform [alexaSkill\|googleAction\|all\|**none**]` | Initializes platform specific folders in the project directory
+`--platform [alexaSkill\|googleAction\|all\|<b>none</b>]` | Initializes platform specific folders in the project directory
 
 
 Options:
