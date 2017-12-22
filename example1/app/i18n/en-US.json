@@ -1,0 +1,11 @@
+{
+  "translation": {
+    "WELCOME": "Welcome",
+    "WELCOME_WITH_PARAMETER": "Welcome %s %s",
+    "WELCOME_ARRAY": [
+      "Welcome",
+      "Hey",
+      "Hello"
+    ]
+  }
+}
