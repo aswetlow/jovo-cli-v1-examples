@@ -13,8 +13,7 @@ Creates a new empty project based on the 'helloWorld' template in the folder <pr
 
 Command | Description | Docs
 ------------ | ------------- | -------------
-`--platform [alexaSkill|googleAction|all|**none**]` | Initializes platform specific folders in the project directory | [📝](#bst-proxy)
-`--watch` | Uses `nodemon` to monitor changes and automatically restart the server | [📝](#watch)
+`--platform [alexaSkill\|googleAction\|all\|**none**]` | Initializes platform specific folders in the project directory
 
 
 Options:
