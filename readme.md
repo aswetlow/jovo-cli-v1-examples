@@ -18,8 +18,10 @@ $ jovo new <project> [--platform <alexaSkill|googleAction|none> [--locale <en-US
 **Options:**
 
 **--platform [alexaSkill|googleAction|all|none]** - Default: none
-<br/>
+<p>
 Initializes platform specific folders in the project directory.
+</p>
+<br/>
 
 **--locale [en-US]** - Default: en-US
 <p>
