@@ -115,6 +115,7 @@ function isWebhook() {
 }
 ```
 
+<br/>
 
 ### Example2
 
@@ -124,11 +125,12 @@ $ jovo new example2 --platform alexaSkill
 Creates simple project with Alexa specific folder structure. (See [example2 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example2))
 ![Jovo Framework](https://www.swetlow.de/example2_folderstructure.jpg)
 
+<br/>
 
 #### Additional files in a project with ASK:
 <br/>
 
-/models/{locale}.json - Jovo language file
+**/models/{locale}.json** - Jovo language file
 ```json
 {
 	"invocation": "first example",
@@ -221,6 +223,8 @@ Creates simple project with Alexa specific folder structure. (See [example2 proj
 ```
 <br/>
 <br/>
+
+**/platforms/alexaSkill/** - Alexa Skill specific files
 
 ## jovo update-model
 
