@@ -5,6 +5,8 @@
 Installed ASK CLI 
 [QuickStart](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
 
+<br/>
+
 
 ## jovo new \<project>
 
@@ -29,7 +31,16 @@ Initializes platform specific folders in the project directory.
 </p>
 <br/>
 
-##### Main project files:
+### Example1
+
+```sh
+$ jovo new example1
+```
+Creates simple project without the the platform specific folder structure. (See [example1 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example1))
+![Jovo Framework](https://www.swetlow.de/example1_folderstructure.jpg)
+
+
+#### Main files in a simple project:
 <br/>
 
 **app/app.js** - Where the logic happens
@@ -89,7 +100,7 @@ function isWebhook() {
 <br/>
 <br/>
 
-/app/i18n/{locale}.json - outsourced i18n language file
+/app/i18n/{locale}.json - Outsourced i18n language file
 ```json
 {
   "translation": {
@@ -105,16 +116,6 @@ function isWebhook() {
 ```
 
 
-
-
-### Example1
-
-```sh
-$ jovo new example1
-```
-Creates simple project without the the platform specific folder structure. (See [example1 project](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/example1))
-![Jovo Framework](https://www.swetlow.de/example1_folderstructure.jpg)
-
 ### Example2
 
 ```sh
@@ -124,28 +125,10 @@ Creates simple project with Alexa specific folder structure. (See [example2 proj
 ![Jovo Framework](https://www.swetlow.de/example2_folderstructure.jpg)
 
 
-<br/>
-<br/>
-
-## jovo update-model
-
-Builds platform specific language/interaction model files from the abstract model.
-
-```sh
-$ jovo update-model [--platform <alexaSkill|googleAction>
-```
-
-**Options:**
-
-**--platform [alexaSkill|googleAction]**
-<p>
-Builds platform specific 
-</p>
+#### Additional files in a project with ASK:
 <br/>
 
-
-
-### (Jovo) Language Model
+/models/{locale}.json - Jovo language file
 ```json
 {
 	"invocation": "first example",
@@ -236,4 +219,24 @@ Builds platform specific
 	}
 }
 ```
+<br/>
+<br/>
+
+## jovo update-model
+
+Builds platform specific language/interaction model files from the abstract model.
+
+```sh
+$ jovo update-model [--platform <alexaSkill|googleAction>
+```
+
+**Options:**
+
+**--platform [alexaSkill|googleAction]**
+<p>
+Builds platform specific language model.
+</p>
+<br/>
+
+
 Generates the Alexa interaction model in file [/platforms/alexaSkill/models/en-US.json](https://github.com/aswetlow/jovo-cli-v1-examples/blob/master/example2/platforms/alexaSkill/models/en-US.json)
