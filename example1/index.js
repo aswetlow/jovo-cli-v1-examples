@@ -3,6 +3,9 @@
 const {Webhook} = require('jovo-framework');
 const {app} = require('./app/app.js');
 
+// =================================================================================
+// Server Configuration
+// =================================================================================
 
 if (isWebhook()) {
     const port = process.env.PORT || 3000;
