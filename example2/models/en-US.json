@@ -20,7 +20,10 @@
 			"inputs": [
 				{
 					"name": "name",
-					"type": "AMAZON.US_FIRST_NAME|@sys.given-name"
+					"type": {
+						"alexa": "AMAZON.US_FIRST_NAME",
+						"dialogflow": "@sys.given-name"
+					}
 				},
 				{
 					"name": "city",
