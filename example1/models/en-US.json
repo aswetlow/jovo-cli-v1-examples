@@ -25,9 +25,8 @@
 					}
 				}
 			]
-		},
+		}
 	],
-	"inputTypes": [],
 	"alexa": {
 		"interactionModel": {
 			"languageModel": {
