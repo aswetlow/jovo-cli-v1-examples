@@ -2,6 +2,18 @@
 	{
 		"data": [
 			{
+				"text": "name",
+				"userDefined": true,
+				"alias": "name",
+				"meta": "@sys.given-name"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
 				"text": "my name is ",
 				"userDefined": false
 			},

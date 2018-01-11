@@ -12,6 +12,7 @@
         {  
             "name":"MyNameIsIntent",
             "phrases":[  
+                "{name}",
                 "my name is {name}",
                 "i am {name}",
                 "you can call me {name}"
