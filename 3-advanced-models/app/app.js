@@ -19,10 +19,10 @@ const app = new App(config);
 
 app.setHandler({
     'LAUNCH': function() {
-        app.toIntent('HelloWorldIntent');
+        this.toIntent('HelloWorldIntent');
     },
     'HelloWorldIntent': function() {
-        app.tell('hello');
+        this.tell('hello');
     },
 });
 
