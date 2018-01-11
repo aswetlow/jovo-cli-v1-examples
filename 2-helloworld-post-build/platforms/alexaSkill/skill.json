@@ -1,0 +1,29 @@
+{
+	"skillManifest": {
+		"publishingInformation": {
+			"locales": {
+				"en-US": {
+					"summary": "Sample Short Description",
+					"examplePhrases": [
+						"Alexa open hello world"
+					],
+					"name": "new-test",
+					"description": "Sample Full Description"
+				}
+			},
+			"isAvailableWorldwide": true,
+			"testingInstructions": "Sample Testing Instructions.",
+			"category": "EDUCATION_AND_REFERENCE",
+			"distributionCountries": []
+		},
+		"apis": {
+			"custom": {
+				"endpoint": {
+					"sslCertificateType": "Wildcard",
+					"uri": "https://a6a643e1.ngrok.io/webhook"
+				}
+			}
+		},
+		"manifestVersion": "1.0"
+	}
+}
