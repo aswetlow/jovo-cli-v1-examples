@@ -19,11 +19,11 @@ const app = new App(config);
 
 app.setHandler({
     'LAUNCH': function() {
-        this.ask('Hi, what is your name?', 'Please tell me your name.');
+        this.toIntent('HelloWorldIntent');
     },
 
     'HelloWorldIntent': function() {
-        this.tell('Hello World!');
+        this.ask('Hello World! What is your name?', 'Please tell me your name.');
     },
 
     'MyNameIsIntent': function(name) {
