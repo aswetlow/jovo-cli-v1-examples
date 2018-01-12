@@ -27,7 +27,7 @@ app.setHandler({
     },
 
     'MyNameIsIntent': function(name) {
-        this.tell('Hey ' + name + '!');
+        this.tell('Hey ' + name + ', nice to meet you!');
     },
 });
 
