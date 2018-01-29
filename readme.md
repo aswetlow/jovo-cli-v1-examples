@@ -8,7 +8,7 @@ Installed ASK CLI
 ## In this Repository
 
 * [Example 1](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/1-helloworld-pre-build): Shows a simple Jovo project before the `jovo build <platform>` command has been executed to transform the language model into platform specific models
-* [Example 2](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/2-helloworld-post-build): Shows a simple Jovo project adter the `jovo build <platform>` command for both an Alexa Skill and a Google Action
+* [Example 2](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/2-helloworld-post-build): Shows a simple Jovo project after the `jovo build <platform>` command for both an Alexa Skill and a Google Action
 * [Example 3](https://github.com/aswetlow/jovo-cli-v1-examples/tree/master/3-advanced-models): Another example which uses another language model to showcase `inputTypes`
 
 ## Documents to get you started
